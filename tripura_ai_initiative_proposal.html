@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tripura AI, Digital Skills & Employability Initiative | Official Proposal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#eef8ff',
+                            100: '#d9f0ff',
+                            500: '#0284c7',
+                            600: '#026aa2',
+                            900: '#0c4a6e',
+                            950: '#082f49',
+                        },
+                        accent: {
+                            50: '#ecfdf5',
+                            500: '#10b981',
+                            600: '#059669',
+                            700: '#047857'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #082f49 0%, #0c4a6e 50%, #0369a1 100%);
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 25px -5px rgba(2, 132, 199, 0.15), 0 8px 10px -6px rgba(2, 132, 199, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-brand-500 selection:text-white">
+
+    <!-- Navigation Bar -->
+    <header class="sticky top-0 z-50 bg-slate-900/95 backdrop-blur-md border-b border-slate-800 text-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-500 to-accent-500 flex items-center justify-center text-white font-bold text-xl shadow-md">
+                    <i class="fa-solid fa-brain"></i>
+                </div>
+                <div>
+                    <span class="text-lg font-bold tracking-tight block leading-tight">Tripura AI Initiative</span>
+                    <span class="text-xs text-brand-100 font-medium tracking-wide">Govt. Proposal 2026-27</span>
+                </div>
+            </div>
+            
+            <nav class="hidden md:flex items-center space-x-6 text-sm font-medium">
+                <a href="#overview" class="hover:text-brand-100 transition">Overview</a>
+                <a href="#vision" class="hover:text-brand-100 transition">Vision & Objectives</a>
+                <a href="#components" class="hover:text-brand-100 transition">Core Components</a>
+                <a href="#workshops" class="hover:text-brand-100 transition">Workshops</a>
+                <a href="#coverage" class="hover:text-brand-100 transition">8 Districts</a>
+                <a href="#partners" class="hover:text-brand-100 transition">Partners</a>
+                <a href="#contact" class="bg-brand-500 hover:bg-brand-600 text-white px-4 py-2 rounded-lg font-semibold transition shadow-md">Express Interest</a>
+            </nav>
+
+            <div class="md:hidden flex items-center">
+                <button id="mobile-menu-btn" class="text-slate-300 hover:text-white focus:outline-none p-2">
+                    <i class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-t border-slate-800 px-4 pt-2 pb-4 space-y-2">
+            <a href="#overview" class="block py-2 hover:bg-slate-800 px-3 rounded-md">Overview</a>
+            <a href="#vision" class="block py-2 hover:bg-slate-800 px-3 rounded-md">Vision & Objectives</a>
+            <a href="#components" class="block py-2 hover:bg-slate-800 px-3 rounded-md">Core Components</a>
+            <a href="#workshops" class="block py-2 hover:bg-slate-800 px-3 rounded-md">Workshops</a>
+            <a href="#coverage" class="block py-2 hover:bg-slate-800 px-3 rounded-md">8 Districts</a>
+            <a href="#partners" class="block py-2 hover:bg-slate-800 px-3 rounded-md">Partners</a>
+            <a href="#contact" class="block py-2 bg-brand-500 text-center font-semibold rounded-md">Express Interest</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white py-20 lg:py-28 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#38bdf8_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center space-x-2 bg-brand-900/80 border border-brand-500/30 text-brand-100 px-3 py-1 rounded-full text-xs font-semibold tracking-wide uppercase">
+                        <span class="w-2 h-2 rounded-full bg-accent-500 animate-pulse"></span>
+                        Statewide Practical AI Literacy & Employability Programme
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
+                        Tripura AI, Digital Skills & <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-100 via-sky-300 to-accent-500">Employability Initiative</span>
+                    </h1>
+                    <p class="text-lg text-slate-300 max-w-2xl font-normal leading-relaxed">
+                        "To build an AI-aware, digitally empowered and employment-ready generation across Tripura."
+                    </p>
+                    <div class="flex flex-wrap gap-4 pt-4">
+                        <a href="#contact" class="bg-accent-500 hover:bg-accent-600 text-white font-semibold px-6 py-3.5 rounded-xl shadow-lg transition flex items-center space-x-2">
+                            <span>Collaborate & Support</span>
+                            <i class="fa-solid fa-arrow-right text-sm"></i>
+                        </a>
+                        <a href="#overview" class="bg-slate-800/80 hover:bg-slate-800 border border-slate-700 text-white font-semibold px-6 py-3.5 rounded-xl transition flex items-center space-x-2">
+                            <span>Explore Proposal</span>
+                            <i class="fa-solid fa-file-lines text-sm"></i>
+                        </a>
+                    </div>
+                    <div class="pt-4 text-xs text-slate-400 flex items-center space-x-6">
+                        <div><strong class="text-white">Submitted to:</strong> Directorate of Skill Development, Govt. of Tripura</div>
+                    </div>
+                </div>
+
+                <!-- Key Metrics Banner Card -->
+                <div class="lg:col-span-5">
+                    <div class="bg-slate-800/90 backdrop-blur-md border border-slate-700/80 rounded-2xl p-6 lg:p-8 shadow-2xl">
+                        <h3 class="text-lg font-bold text-white mb-6 flex items-center justify-between border-b border-slate-700 pb-3">
+                            <span>Programme Key Targets</span>
+                            <span class="text-xs bg-brand-500/20 text-brand-100 px-2.5 py-1 rounded-md font-medium">2026-27</span>
+                        </h3>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="bg-slate-900/60 p-4 rounded-xl border border-slate-700/50">
+                                <div class="text-2xl lg:text-3xl font-extrabold text-brand-100">8</div>
+                                <div class="text-xs text-slate-400 font-medium mt-1">Districts Covered</div>
+                            </div>
+                            <div class="bg-slate-900/60 p-4 rounded-xl border border-slate-700/50">
+                                <div class="text-2xl lg:text-3xl font-extrabold text-accent-500">40-50</div>
+                                <div class="text-xs text-slate-400 font-medium mt-1">Practical Workshops</div>
+                            </div>
+                            <div class="bg-slate-900/60 p-4 rounded-xl border border-slate-700/50">
+                                <div class="text-2xl lg:text-3xl font-extrabold text-sky-400">3,000+</div>
+                                <div class="text-xs text-slate-400 font-medium mt-1">Direct Beneficiaries</div>
+                            </div>
+                            <div class="bg-slate-900/60 p-4 rounded-xl border border-slate-700/50">
+                                <div class="text-2xl lg:text-3xl font-extrabold text-emerald-400">25+</div>
+                                <div class="text-xs text-slate-400 font-medium mt-1">Institutions / Hubs</div>
+                            </div>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-slate-700 flex items-center justify-between text-xs text-slate-400">
+                            <span>Duration: 4-6 Months Pilot</span>
+                            <span class="text-accent-400 font-semibold"><i class="fa-solid fa-circle-check mr-1"></i> Pre/Post Assessed</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Executive Summary & Vision Section -->
+    <section id="overview" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="text-xs font-bold uppercase tracking-widest text-brand-600 mb-2">Executive Summary & Context</h2>
+            <h3 class="text-3xl font-extrabold text-slate-900 tracking-tight">Bridging Traditional Education to AI-Driven Employability</h3>
+            <p class="mt-4 text-slate-600">
+                Artificial Intelligence is rapidly transforming education, employment, entrepreneurship and the workplace. Students, job seekers, and MSMEs need practical capabilities to thrive in the emerging digital economy.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 card-hover">
+                <div class="w-12 h-12 bg-brand-50 text-brand-600 rounded-xl flex items-center justify-center text-xl font-bold mb-6">
+                    <i class="fa-solid fa-compass"></i>
+                </div>
+                <h4 class="text-xl font-bold text-slate-900 mb-3">The Bridge</h4>
+                <p class="text-slate-600 text-sm leading-relaxed">
+                    Connecting traditional education to digital skills, AI literacy, employability, and sustainable entrepreneurship across Tripura.
+                </p>
+            </div>
+
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 card-hover">
+                <div class="w-12 h-12 bg-accent-50 text-accent-600 rounded-xl flex items-center justify-center text-xl font-bold mb-6">
+                    <i class="fa-solid fa-bullseye"></i>
+                </div>
+                <h4 class="text-xl font-bold text-slate-900 mb-3">Our Core Vision</h4>
+                <p class="text-slate-600 text-sm leading-relaxed">
+                    To build an AI-aware, digitally empowered, and employment-ready generation capable of adapting to rapidly changing career landscapes.
+                </p>
+            </div>
+
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 card-hover">
+                <div class="w-12 h-12 bg-sky-50 text-sky-600 rounded-xl flex items-center justify-center text-xl font-bold mb-6">
+                    <i class="fa-solid fa-users"></i>
+                </div>
+                <h4 class="text-xl font-bold text-slate-900 mb-3">Target Beneficiaries</h4>
+                <p class="text-slate-600 text-sm leading-relaxed">
+                    Students, graduates, job seekers, teachers, women entrepreneurs, MSMEs, and underserved remote communities.
+                </p>
+            </div>
+        </div>
+
+        <!-- Beneficiary Categories Detailed Pills -->
+        <div id="vision" class="mt-16 bg-slate-900 rounded-3xl p-8 lg:p-12 text-white">
+            <h4 class="text-xl font-bold mb-6 text-center text-brand-100">Comprehensive Beneficiary Ecosystem</h4>
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
+                <div class="bg-slate-800/80 p-4 rounded-xl border border-slate-700 text-center">
+                    <i class="fa-solid fa-graduation-cap text-brand-400 text-xl mb-2"></i>
+                    <div class="text-sm font-bold">Students</div>
+                    <div class="text-xs text-slate-400 mt-1">Higher Sec, College & Tech</div>
+                </div>
+                <div class="bg-slate-800/80 p-4 rounded-xl border border-slate-700 text-center">
+                    <i class="fa-solid fa-user-tie text-accent-400 text-xl mb-2"></i>
+                    <div class="text-sm font-bold">Job Seekers</div>
+                    <div class="text-xs text-slate-400 mt-1">Graduates & Aspirants</div>
+                </div>
+                <div class="bg-slate-800/80 p-4 rounded-xl border border-slate-700 text-center">
+                    <i class="fa-solid fa-chalkboard-user text-sky-400 text-xl mb-2"></i>
+                    <div class="text-sm font-bold">Teachers</div>
+                    <div class="text-xs text-slate-400 mt-1">Faculty & Trainers</div>
+                </div>
+                <div class="bg-slate-800/80 p-4 rounded-xl border border-slate-700 text-center">
+                    <i class="fa-solid fa-person-dress text-pink-400 text-xl mb-2"></i>
+                    <div class="text-sm font-bold">Women</div>
+                    <div class="text-xs text-slate-400 mt-1">Entrepreneurs & SHGs</div>
+                </div>
+                <div class="bg-slate-800/80 p-4 rounded-xl border border-slate-700 text-center">
+                    <i class="fa-solid fa-store text-amber-400 text-xl mb-2"></i>
+                    <div class="text-sm font-bold">MSMEs</div>
+                    <div class="text-xs text-slate-400 mt-1">Small Business Owners</div>
+                </div>
+                <div class="bg-slate-800/80 p-4 rounded-xl border border-slate-700 text-center">
+                    <i class="fa-solid fa-hands-holding-child text-emerald-400 text-xl mb-2"></i>
+                    <div class="text-sm font-bold">Underserved</div>
+                    <div class="text-xs text-slate-400 mt-1">Remote Communities</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Programme Components Section -->
+    <section id="components" class="py-20 bg-slate-100 border-y border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-bold uppercase tracking-widest text-brand-600 mb-2">Core Pillars</h2>
+                <h3 class="text-3xl font-extrabold text-slate-900 tracking-tight">5 Pillars of the Training Programme</h3>
+                <p class="mt-4 text-slate-600">
+                    Designed not as isolated lectures, but as an immersive empowerment curriculum covering technical mastery and responsible usage.
+                </p>
+            </div>
+
+            <!-- Tabs Navigation -->
+            <div class="flex flex-wrap justify-center gap-2 mb-10" id="component-tabs">
+                <button onclick="switchTab(0)" class="tab-btn px-5 py-2.5 rounded-xl font-semibold text-sm transition bg-brand-600 text-white shadow-md">1. AI Literacy</button>
+                <button onclick="switchTab(1)" class="tab-btn px-5 py-2.5 rounded-xl font-semibold text-sm transition bg-white text-slate-700 hover:bg-slate-200 border border-slate-300">2. Digital Productivity</button>
+                <button onclick="switchTab(2)" class="tab-btn px-5 py-2.5 rounded-xl font-semibold text-sm transition bg-white text-slate-700 hover:bg-slate-200 border border-slate-300">3. Careers & Employability</button>
+                <button onclick="switchTab(3)" class="tab-btn px-5 py-2.5 rounded-xl font-semibold text-sm transition bg-white text-slate-700 hover:bg-slate-200 border border-slate-300">4. Entrepreneurship</button>
+                <button onclick="switchTab(4)" class="tab-btn px-5 py-2.5 rounded-xl font-semibold text-sm transition bg-white text-slate-700 hover:bg-slate-200 border border-slate-300">5. Responsible & Ethical AI</button>
+            </div>
+
+            <!-- Tab Content Container -->
+            <div class="max-w-4xl mx-auto bg-white rounded-3xl p-8 lg:p-12 shadow-md border border-slate-200">
+                
+                <!-- Component 1 -->
+                <div class="comp-pane space-y-6">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-14 h-14 bg-brand-50 text-brand-600 rounded-2xl flex items-center justify-center text-2xl font-bold">
+                            <i class="fa-solid fa-microchip"></i>
+                        </div>
+                        <div>
+                            <span class="text-xs font-bold text-brand-600 uppercase tracking-wider">Component 01</span>
+                            <h4 class="text-2xl font-bold text-slate-900">AI Literacy & Fundamentals</h4>
+                        </div>
+                    </div>
+                    <p class="text-slate-600 leading-relaxed">
+                        Demystifying Artificial Intelligence for learners across Tripura, taking participants from basic awareness to hands-on generative AI usage.
+                    </p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 flex items-start space-x-3">
+                            <i class="fa-solid fa-check text-accent-600 mt-1"></i>
+                            <span class="text-sm font-medium text-slate-700">Fundamentals of Artificial Intelligence & Generative AI</span>
+                        </div>
+                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 flex items-start space-x-3">
+                            <i class="fa-solid fa-check text-accent-600 mt-1"></i>
+                            <span class="text-sm font-medium text-slate-700">Real-world applications, capabilities and technical limitations</span>
+                        </div>
+                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 flex items-start space-x-3">
+                            <i class="fa-solid fa-check text-accent-600 mt-1"></i>
+                            <span class="text-sm font-medium text-slate-700">Practical exploration of generative tools for everyday learning</span>
+                        </div>
+                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 flex items-start space-x-3">
+                            <i class="fa-solid fa-check text-accent-600 mt-1"></i>
+                            <span class="text-sm font-medium text-slate-700">Responsible AI awareness from day one</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Component 2 -->
+                <div class="comp-pane hidden space-y-6">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-14 h-14 bg-sky-50 text-sky-600 rounded-2xl flex items-center justify-center text-2xl font-bold">
+                            <i class="fa-solid fa-laptop-code"></i>
+                        </div>
+                        <div>
+                            <span class="text-xs font-bold text-sky-600 uppercase tracking-wider">Component 02</span>
+                            <h4 class="text-2xl font-bold text-slate-900">Digital Productivity</h4>
+                        </div>
+                    </div>
+                    <p class="text-slate-600 leading-relaxed">
+                        Empowering participants with modern technological applications to drastically improve everyday efficiency and output quality.
+                    </p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 flex items-start space-x-3">
+                            <i class="fa-solid fa-check text-accent-600 mt-1"></i>
+                            <span class="text-sm font-medium text-slate-700">Advanced Documentation & AI-assisted research</span>
+                        </div>
+                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-700 flex items-start space-x-3">
+                            <i class="fa-solid fa-check text-accent-600 mt-1"></i>
+                            <span class="text-sm font-medium text-slate-700">Professional presentations and communication tools</span>
+                        </div>
+                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-700 flex items-start space-x-3">
+                            <i class="fa-solid fa-check text-accent-600 mt-1"></i>
+                            <span class="text-sm font-medium text-slate-700">Digital content creation and basic data handling</span>
+                        </div>
+                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 flex items-start space-x-3">
+                            <i class="fa-solid fa-check text-accent-600 mt-1"></i>
+                            <span class="text-sm font-medium text-slate-700">Streamlining everyday workflow tasks digitally</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Component 3 -->
+                <div class="comp-pane hidden space-y-6">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-14 h-14 bg-emerald-50 text-emerald-600 rounded-2xl flex items-center justify-center text-2xl font-bold">
+                            <i class="fa-solid fa-briefcase"></i>
+                        </div>
+                        <div>
+                            <span class="text-xs font-bold text-emerald-600 uppercase tracking-wider">Component 03</span>
+                            <h4 class="text-2xl font-bold text-slate-900">AI for Careers & Employability</h4>
+                        </div>
+                    </div>
+                    <p class="text-slate-600 leading-relaxed">
+                        Equipping job seekers and students with modern tools to navigate the job market with confidence and high professional readiness.
+                    </p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 flex items-start space-x-3">
+                            <i class="fa-solid fa-check text-accent-600 mt-1"></i>
+                            <span class="text-sm font-medium text-slate-700">AI-assisted career research and skill-gap identification</span>
+                        </div>
+                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 flex items-start space-x-3">
+                            <i class="fa-solid fa-check text-accent-600 mt-1"></i>
+                            <span class="text-sm font-medium text-slate-700">Professional resume optimization and tailoring</span>
+                        </div>
+                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 flex items-start space-x-3">
+                            <i class="fa-solid fa-check text-accent-600 mt-1"></i>
+                            <span class="text-sm font-medium text-slate-700">Mock interview preparation and communication practice</span>
+                        </div>
+                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 flex items-start space-x-3">
+                            <i class="fa-solid fa-check text-accent-600 mt-1"></i>
+                            <span class="text-sm font-medium text-slate-700">Workplace digital professional standards</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Component 4 -->
+                <div class="comp-pane hidden space-y-6">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-14 h-14 bg-amber-50 text-amber-600 rounded-2xl flex items-center justify-center text-2xl font-bold">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <div>
+                            <span class="text-xs font-bold text-amber-600 uppercase tracking-wider">Component 04</span>
+                            <h4 class="text-2xl font-bold text-slate-900">AI for Entrepreneurship & MSMEs</h4>
+                        </div>
+                    </div>
+                    <p class="text-slate-600 leading-relaxed">
+                        Helping local business owners, artisans, and aspiring entrepreneurs scale operations using cost-effective AI solutions.
+                    </p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 flex items-start space-x-3">
+                            <i class="fa-solid fa-check text-accent-600 mt-1"></i>
+                            <span class="text-sm font-medium text-slate-700">Business ideation and regional market research</span>
+                        </div>
+                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 flex items-start space-x-3">
+                            <i class="fa-solid fa-check text-accent-600 mt-1"></i>
+                            <span class="text-sm font-medium text-slate-700">Digital marketing and social media content strategies</span>
+                        </div>
+                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 flex items-start space-x-3">
+                            <i class="fa-solid fa-check text-accent-600 mt-1"></i>
+                            <span class="text-sm font-medium text-slate-700">Customer communication support and basic automation</span>
+                        </div>
+                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 flex items-start space-x-3">
+                            <i class="fa-solid fa-check text-accent-600 mt-1"></i>
+                            <span class="text-sm font-medium text-slate-700">AI-enabled business productivity models</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Component 5 -->
+                <div class="comp-pane hidden space-y-6">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-14 h-14 bg-rose-50 text-rose-600 rounded-2xl flex items-center justify-center text-2xl font-bold">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <div>
+                            <span class="text-xs font-bold text-rose-600 uppercase tracking-wider">Component 05</span>
+                            <h4 class="text-2xl font-bold text-slate-900">Responsible & Ethical AI</h4>
+                        </div>
+                    </div>
+                    <p class="text-slate-600 leading-relaxed">
+                        Instilling vital digital hygiene, cyber safety awareness, and ethical responsibility when interacting with synthetic media and AI tools.
+                    </p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 flex items-start space-x-3">
+                            <i class="fa-solid fa-check text-accent-600 mt-1"></i>
+                            <span class="text-sm font-medium text-slate-700">Data privacy, cyber safety, and misinformation awareness</span>
+                        </div>
+                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 flex items-start space-x-3">
+                            <i class="fa-solid fa-check text-accent-600 mt-1"></i>
+                            <span class="text-sm font-medium text-slate-700">Recognizing deepfakes, AI hallucinations, and copyright issues</span>
+                        </div>
+                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 flex items-start space-x-3">
+                            <i class="fa-solid fa-check text-accent-600 mt-1"></i>
+                            <span class="text-sm font-medium text-slate-700">Importance of human verification and oversight</span>
+                        </div>
+                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 flex items-start space-x-3">
+                            <i class="fa-solid fa-check text-accent-600 mt-1"></i>
+                            <span class="text-sm font-medium text-slate-700">Safe and ethical digital citizenship</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Workshop Model & Modules Section -->
+    <section id="workshops" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="text-xs font-bold uppercase tracking-widest text-brand-600 mb-2">Practical Delivery</h2>
+            <h3 class="text-3xl font-extrabold text-slate-900 tracking-tight">Structured 6-Module Workshop Model</h3>
+            <p class="mt-4 text-slate-600">
+                Each 2 to 4-hour workshop integrates live demonstrations, interactive practice, and rigorous pre/post learning assessments.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            
+            <!-- Module 1 -->
+            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm relative overflow-hidden group hover:border-brand-500 transition">
+                <div class="absolute top-0 right-0 bg-brand-50 text-brand-600 text-xs font-bold px-3 py-1.5 rounded-bl-xl">Module 01</div>
+                <div class="w-12 h-12 bg-brand-50 text-brand-600 rounded-xl flex items-center justify-center text-lg font-bold mb-4">
+                    <i class="fa-solid fa-book-open"></i>
+                </div>
+                <h4 class="text-lg font-bold text-slate-900 mb-2">AI Fundamentals</h4>
+                <p class="text-xs text-brand-600 font-semibold mb-3">Foundational Understanding</p>
+                <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                    Introduction to what AI is, where it is applied globally, understanding Generative AI, and real-world everyday applications.
+                </p>
+            </div>
+
+            <!-- Module 2 -->
+            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm relative overflow-hidden group hover:border-brand-500 transition">
+                <div class="absolute top-0 right-0 bg-sky-50 text-sky-600 text-xs font-bold px-3 py-1.5 rounded-bl-xl">Module 02</div>
+                <div class="w-12 h-12 bg-sky-50 text-sky-600 rounded-xl flex items-center justify-center text-lg font-bold mb-4">
+                    <i class="fa-solid fa-desktop"></i>
+                </div>
+                <h4 class="text-lg font-bold text-slate-900 mb-2">Practical AI Demonstrations</h4>
+                <p class="text-xs text-sky-600 font-semibold mb-3">Live Interactive Sessions</p>
+                <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                    Live walkthroughs involving intelligent research, professional writing, learning assistance, presentations, and content creation.
+                </p>
+            </div>
+
+            <!-- Module 3 -->
+            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm relative overflow-hidden group hover:border-brand-500 transition">
+                <div class="absolute top-0 right-0 bg-emerald-50 text-emerald-600 text-xs font-bold px-3 py-1.5 rounded-bl-xl">Module 03</div>
+                <div class="w-12 h-12 bg-emerald-50 text-emerald-600 rounded-xl flex items-center justify-center text-lg font-bold mb-4">
+                    <i class="fa-solid fa-file-contract"></i>
+                </div>
+                <h4 class="text-lg font-bold text-slate-900 mb-2">AI for Careers</h4>
+                <p class="text-xs text-emerald-600 font-semibold mb-3">Employment Readiness</p>
+                <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                    Targeted sessions on career path research, professional resume improvement, interview preparation, and identifying skill gaps.
+                </p>
+            </div>
+
+            <!-- Module 4 -->
+            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm relative overflow-hidden group hover:border-brand-500 transition">
+                <div class="absolute top-0 right-0 bg-amber-50 text-amber-600 text-xs font-bold px-3 py-1.5 rounded-bl-xl">Module 04</div>
+                <div class="w-12 h-12 bg-amber-50 text-amber-600 rounded-xl flex items-center justify-center text-lg font-bold mb-4">
+                    <i class="fa-solid fa-shop"></i>
+                </div>
+                <h4 class="text-lg font-bold text-slate-900 mb-2">AI for Business & MSMEs</h4>
+                <p class="text-xs text-amber-600 font-semibold mb-3">Entrepreneurial Value</p>
+                <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                    Practical guidance on business ideas, digital marketing, customer support automation, and local market research.
+                </p>
+            </div>
+
+            <!-- Module 5 -->
+            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm relative overflow-hidden group hover:border-brand-500 transition">
+                <div class="absolute top-0 right-0 bg-rose-50 text-rose-600 text-xs font-bold px-3 py-1.5 rounded-bl-xl">Module 05</div>
+                <div class="w-12 h-12 bg-rose-50 text-rose-600 rounded-xl flex items-center justify-center text-lg font-bold mb-4">
+                    <i class="fa-solid fa-shield-virus"></i>
+                </div>
+                <h4 class="text-lg font-bold text-slate-900 mb-2">Responsible AI & Ethics</h4>
+                <p class="text-xs text-rose-600 font-semibold mb-3">Safety & Governance</p>
+                <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                    Education on privacy, misinformation detection, AI hallucinations, deepfakes, copyright awareness, and human verification.
+                </p>
+            </div>
+
+            <!-- Module 6 -->
+            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm relative overflow-hidden group hover:border-brand-500 transition">
+                <div class="absolute top-0 right-0 bg-indigo-50 text-indigo-600 text-xs font-bold px-3 py-1.5 rounded-bl-xl">Module 06</div>
+                <div class="w-12 h-12 bg-indigo-50 text-indigo-600 rounded-xl flex items-center justify-center text-lg font-bold mb-4">
+                    <i class="fa-solid fa-square-poll-vertical"></i>
+                </div>
+                <h4 class="text-lg font-bold text-slate-900 mb-2">Structured Assessment</h4>
+                <p class="text-xs text-indigo-600 font-semibold mb-3">Measurable Outcomes</p>
+                <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                    Rigorous evaluation loop: Pre-Assessment &rarr; Training Session &rarr; Post-Assessment to accurately compute learning improvement.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Statewide Coverage & Targets Section -->
+    <section id="coverage" class="py-20 bg-slate-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-bold uppercase tracking-widest text-brand-400 mb-2">Statewide Footprint</h2>
+                <h3 class="text-3xl font-extrabold tracking-tight">Coverage Across All 8 Districts of Tripura</h3>
+                <p class="mt-4 text-slate-400">
+                    Ensuring inclusive technology distribution from urban centers to remote district headquarters.
+                </p>
+            </div>
+
+            <!-- 8 Districts Grid -->
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-16">
+                <div class="bg-slate-800/90 border border-slate-700 p-5 rounded-2xl text-center hover:border-brand-500 transition">
+                    <div class="w-10 h-10 bg-brand-500/20 text-brand-400 rounded-xl mx-auto flex items-center justify-center font-bold mb-3">1</div>
+                    <h4 class="font-bold text-white">West Tripura</h4>
+                    <p class="text-xs text-slate-400 mt-1">Agartala Hub & Capital Region</p>
+                </div>
+                <div class="bg-slate-800/90 border border-slate-700 p-5 rounded-2xl text-center hover:border-brand-500 transition">
+                    <div class="w-10 h-10 bg-brand-500/20 text-brand-400 rounded-xl mx-auto flex items-center justify-center font-bold mb-3">2</div>
+                    <h4 class="font-bold text-white">Sepahijala</h4>
+                    <p class="text-xs text-slate-400 mt-1">Bishramganj & Surrounds</p>
+                </div>
+                <div class="bg-slate-800/90 border border-slate-700 p-5 rounded-2xl text-center hover:border-brand-500 transition">
+                    <div class="w-10 h-10 bg-brand-500/20 text-brand-400 rounded-xl mx-auto flex items-center justify-center font-bold mb-3">3</div>
+                    <h4 class="font-bold text-white">Khowai</h4>
+                    <p class="text-xs text-slate-400 mt-1">Khowai & Teliamura</p>
+                </div>
+                <div class="bg-slate-800/90 border border-slate-700 p-5 rounded-2xl text-center hover:border-brand-500 transition">
+                    <div class="w-10 h-10 bg-brand-500/20 text-brand-400 rounded-xl mx-auto flex items-center justify-center font-bold mb-3">4</div>
+                    <h4 class="font-bold text-white">Gomati</h4>
+                    <p class="text-xs text-slate-400 mt-1">Udaipur & Amarpur</p>
+                </div>
+                <div class="bg-slate-800/90 border border-slate-700 p-5 rounded-2xl text-center hover:border-brand-500 transition">
+                    <div class="w-10 h-10 bg-brand-500/20 text-brand-400 rounded-xl mx-auto flex items-center justify-center font-bold mb-3">5</div>
+                    <h4 class="font-bold text-white">South Tripura</h4>
+                    <p class="text-xs text-slate-400 mt-1">Belonia & Sabroom</p>
+                </div>
+                <div class="bg-slate-800/90 border border-slate-700 p-5 rounded-2xl text-center hover:border-brand-500 transition">
+                    <div class="w-10 h-10 bg-brand-500/20 text-brand-400 rounded-xl mx-auto flex items-center justify-center font-bold mb-3">6</div>
+                    <h4 class="font-bold text-white">Unakoti</h4>
+                    <p class="text-xs text-slate-400 mt-1">Kailashahar & Kumarghat</p>
+                </div>
+                <div class="bg-slate-800/90 border border-slate-700 p-5 rounded-2xl text-center hover:border-brand-500 transition">
+                    <div class="w-10 h-10 bg-brand-500/20 text-brand-400 rounded-xl mx-auto flex items-center justify-center font-bold mb-3">7</div>
+                    <h4 class="font-bold text-white">North Tripura</h4>
+                    <p class="text-xs text-slate-400 mt-1">Dharmanagar & Kanchanpur</p>
+                </div>
+                <div class="bg-slate-800/90 border border-slate-700 p-5 rounded-2xl text-center hover:border-brand-500 transition">
+                    <div class="w-10 h-10 bg-brand-500/20 text-brand-400 rounded-xl mx-auto flex items-center justify-center font-bold mb-3">8</div>
+                    <h4 class="font-bold text-white">Dhalai</h4>
+                    <p class="text-xs text-slate-400 mt-1">Ambassa & Longtharai Valley</p>
+                </div>
+            </div>
+
+            <!-- Target Summary Table Card -->
+            <div class="bg-slate-800 rounded-2xl border border-slate-700 overflow-hidden shadow-xl max-w-4xl mx-auto">
+                <div class="bg-slate-900 px-6 py-4 border-b border-slate-700 flex justify-between items-center">
+                    <h4 class="font-bold text-white">Initial Proposal Planning Targets</h4>
+                    <span class="text-xs text-brand-400 font-semibold bg-brand-950 px-3 py-1 rounded-md">Pilot Phase 2026-27</span>
+                </div>
+                <div class="divide-y divide-slate-700">
+                    <div class="px-6 py-3.5 flex justify-between items-center text-sm">
+                        <span class="text-slate-300">Districts Covered</span>
+                        <span class="font-bold text-white">8 Districts</span>
+                    </div>
+                    <div class="px-6 py-3.5 flex justify-between items-center text-sm">
+                        <span class="text-slate-300">Proposed Workshops</span>
+                        <span class="font-bold text-white">40 - 50 Sessions</span>
+                    </div>
+                    <div class="px-6 py-3.5 flex justify-between items-center text-sm">
+                        <span class="text-slate-300">Target Beneficiaries</span>
+                        <span class="font-bold text-accent-400">3,000+ Participants</span>
+                    </div>
+                    <div class="px-6 py-3.5 flex justify-between items-center text-sm">
+                        <span class="text-slate-300">Institutions & Community Locations</span>
+                        <span class="font-bold text-white">25+ Locations</span>
+                    </div>
+                    <div class="px-6 py-3.5 flex justify-between items-center text-sm">
+                        <span class="text-slate-300">Assessments & Impact Reports</span>
+                        <span class="font-bold text-white">3,000+ Assessments & 8 District Reports</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Implementation Structure & Partners Section -->
+    <section id="partners" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="text-xs font-bold uppercase tracking-widest text-brand-600 mb-2">Collaboration Framework</h2>
+            <h3 class="text-3xl font-extrabold text-slate-900 tracking-tight">Implementation Structure & Partners</h3>
+            <p class="mt-4 text-slate-600">
+                A streamlined synergy between state government oversight, grassroots community execution, and specialized technology delivery.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+            
+            <!-- Government Partner -->
+            <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
+                <div>
+                    <div class="w-12 h-12 bg-sky-50 text-sky-600 rounded-xl flex items-center justify-center text-xl font-bold mb-6">
+                        <i class="fa-solid fa-landmark"></i>
+                    </div>
+                    <span class="text-xs font-bold text-sky-600 uppercase tracking-wider">Apex Guidance</span>
+                    <h4 class="text-xl font-bold text-slate-900 mb-3">Directorate of Skill Development</h4>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                        Government of Tripura. Providing institutional guidance, district-level coordination, infrastructure support, and scheme convergence.
+                    </p>
+                </div>
+                <div class="pt-4 border-t border-slate-100 text-xs text-slate-500 font-medium">
+                    <i class="fa-solid fa-circle-check text-accent-600 mr-1"></i> Policy & Convergence Support
+                </div>
+            </div>
+
+            <!-- NGO Partner -->
+            <div class="bg-white p-8 rounded-2xl border-2 border-brand-500 shadow-md flex flex-col justify-between relative">
+                <div class="absolute -top-3 right-6 bg-brand-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow-sm">Lead NGO Partner</div>
+                <div>
+                    <div class="w-12 h-12 bg-brand-50 text-brand-600 rounded-xl flex items-center justify-center text-xl font-bold mb-6">
+                        <i class="fa-solid fa-hands-holding-circle"></i>
+                    </div>
+                    <span class="text-xs font-bold text-brand-600 uppercase tracking-wider">Community Partner</span>
+                    <h4 class="text-xl font-bold text-slate-900 mb-3">Help Line Welfare Organisation</h4>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                        Managing grassroots community mobilisation, venue coordination, local institutional liaison, attendance, and administrative documentation.
+                    </p>
+                </div>
+                <div class="pt-4 border-t border-slate-100 text-xs text-slate-600 space-y-1">
+                    <div><strong class="text-slate-800">Leadership:</strong> Mrs. Dulu Rani Das (President)</div>
+                    <div><strong class="text-slate-800">Secretary:</strong> Mr. Ashok Kumar Ghosh</div>
+                    <div><strong class="text-slate-800">Treasurer:</strong> Mr. Sibaji Bose</div>
+                    <div class="pt-1 text-slate-500"><i class="fa-solid fa-location-dot mr-1"></i> Bipani Bitan Market, Rm #378, Durga Chowmuhani, Agartala</div>
+                </div>
+            </div>
+
+            <!-- Tech Partner -->
+            <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
+                <div>
+                    <div class="w-12 h-12 bg-emerald-50 text-emerald-600 rounded-xl flex items-center justify-center text-xl font-bold mb-6">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+                    <span class="text-xs font-bold text-emerald-600 uppercase tracking-wider">Technology & Training Partner</span>
+                    <h4 class="text-xl font-bold text-slate-900 mb-3">ATSFy Technologies</h4>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        Delivering the practical AI curriculum, expert trainers, live workshop demonstrations, digital registration system, and impact dashboards.
+                    </p>
+                    <div class="space-y-1 text-xs text-slate-600 mb-6 pt-2 border-t border-slate-100">
+                        <div><strong class="text-slate-800">Phone:</strong> +91-98625 10477</div>
+                        <div><strong class="text-slate-800">Email:</strong> atsfy@atsfy.tech</div>
+                        <div><strong class="text-slate-800">Address:</strong> Dhaleswar Rd No. 16, Agartala, Tripura - 799007</div>
+                    </div>
+                </div>
+                <div class="pt-4 border-t border-slate-100 text-xs text-slate-500 font-medium">
+                    <i class="fa-solid fa-circle-check text-accent-600 mr-1"></i> Curriculum & Tech Infrastructure
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Monitoring & Outcomes Flow -->
+        <div class="bg-slate-900 text-white rounded-3xl p-8 lg:p-12">
+            <h4 class="text-2xl font-bold text-center mb-8">Measurable Outcomes & Evaluation Loop</h4>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700">
+                    <div class="text-brand-400 font-bold text-sm mb-2"><i class="fa-solid fa-chart-pie mr-2"></i> Short-Term</div>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        Participants understand core AI concepts, gain confidence with selected generative tools, and recognize digital security risks.
+                    </p>
+                </div>
+                <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700">
+                    <div class="text-accent-400 font-bold text-sm mb-2"><i class="fa-solid fa-rocket mr-2"></i> Medium-Term</div>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        Practical application in education and careers, improved resume preparation, and enhanced MSME business productivity.
+                    </p>
+                </div>
+                <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700">
+                    <div class="text-sky-400 font-bold text-sm mb-2"><i class="fa-solid fa-seedling mr-2"></i> Long-Term</div>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        Broad digital inclusion, sustainable workforce readiness, regional entrepreneurship growth, and responsible digital citizenship.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Proposal Inquiry & Meeting Request Section -->
+    <section id="contact" class="py-20 bg-slate-100 border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+                
+                <div class="lg:col-span-6 space-y-6">
+                    <h2 class="text-xs font-bold uppercase tracking-widest text-brand-600">Connect & Review</h2>
+                    <h3 class="text-3xl font-extrabold text-slate-900 tracking-tight">Schedule Presentation & Pilot Discussion</h3>
+                    <p class="text-slate-600 leading-relaxed">
+                        The implementing NGO and ATSFy Technologies are fully prepared to present the detailed curriculum, live AI platform demonstration, and pilot framework before the competent authority.
+                    </p>
+                    
+                    <div class="space-y-4 pt-4">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-10 h-10 bg-brand-50 text-brand-600 rounded-xl flex items-center justify-center shrink-0 font-bold">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900">Head Office Address</h4>
+                                <p class="text-sm text-slate-600">Bipani Bitan Market, Room No.-378, 2nd Floor, Durga Chowmuhani, Agartala, Tripura (West) - 799001</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-10 h-10 bg-brand-50 text-brand-600 rounded-xl flex items-center justify-center shrink-0 font-bold">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900">Contact Numbers</h4>
+                                <p class="text-sm text-slate-600">+91-70051 57540 / +91-60097 94529</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-10 h-10 bg-brand-50 text-brand-600 rounded-xl flex items-center justify-center shrink-0 font-bold">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900">Official Email</h4>
+                                <p class="text-sm text-slate-600">helplinewelfare135@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Inquiry Form Box -->
+                <div class="lg:col-span-6 bg-white p-8 rounded-3xl shadow-md border border-slate-200">
+                    <h4 class="text-xl font-bold text-slate-900 mb-6">Submit Expression of Interest / Meeting Request</h4>
+                    
+                    <form id="proposal-form" onsubmit="handleFormSubmit(event)" class="space-y-4">
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Your Name / Designation</label>
+                            <input type="text" id="form-name" required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 text-sm outline-none transition" placeholder="e.g., Directorate Official / Principal">
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Organization / Department</label>
+                                <input type="text" id="form-org" required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 text-sm outline-none transition" placeholder="e.g., Skill Development Dept.">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Contact Phone / Email</label>
+                                <input type="text" id="form-contact" required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 text-sm outline-none transition" placeholder="Email or Phone">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Inquiry / Support Area</label>
+                            <select id="form-topic" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 text-sm outline-none transition bg-white">
+                                <option>Schedule Presentation / Demonstration</option>
+                                <option>Pilot District Rollout Discussion</option>
+                                <option>Institutional Convergence & Infrastructure</option>
+                                <option>General Proposal Inquiry</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Message or Comments</label>
+                            <textarea id="form-message" rows="3" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 text-sm outline-none transition" placeholder="Specify any specific feedback or preferred meeting date..."></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full bg-brand-600 hover:bg-brand-700 text-white font-semibold py-3.5 rounded-xl transition shadow-md flex items-center justify-center space-x-2">
+                            <span>Send Inquiry</span>
+                            <i class="fa-solid fa-paper-plane text-xs"></i>
+                        </button>
+                    </form>
+
+                    <!-- Success Message Box (Hidden by default) -->
+                    <div id="form-success" class="hidden mt-4 p-4 bg-accent-50 border border-accent-200 text-accent-700 rounded-xl text-center text-sm font-medium">
+                        <i class="fa-solid fa-circle-check mr-2"></i> Thank you! Your expression of interest has been recorded successfully. The implementing team will connect shortly.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 text-slate-400 py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between space-y-6 md:space-y-0 text-center md:text-left">
+            <div>
+                <div class="text-white font-bold text-lg mb-1">Tripura AI, Digital Skills & Employability Initiative</div>
+                <p class="text-xs text-slate-500">Submitted to the Directorate of Skill Development, Government of Tripura (2026-27)</p>
+            </div>
+            <div class="text-xs text-slate-500 space-y-1">
+                <div>Implementation Partner: <strong class="text-slate-400">Help Line Welfare Organisation</strong></div>
+                <div>Tech Partner: <strong class="text-slate-400">ATSFy Technologies</strong></div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Interactivity -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Component Tabs Switching
+        const tabButtons = document.querySelectorAll('.tab-btn');
+        const tabPanes = document.querySelectorAll('.comp-pane');
+
+        function switchTab(index) {
+            tabButtons.forEach((btn, i) => {
+                if (i === index) {
+                    btn.classList.remove('bg-white', 'text-slate-700', 'border', 'border-slate-300');
+                    btn.classList.add('bg-brand-600', 'text-white', 'shadow-md');
+                } else {
+                    btn.classList.add('bg-white', 'text-slate-700', 'border', 'border-slate-300');
+                    btn.classList.remove('bg-brand-600', 'text-white', 'shadow-md');
+                }
+            });
+
+            tabPanes.forEach((pane, i) => {
+                if (i === index) {
+                    pane.classList.remove('hidden');
+                } else {
+                    pane.classList.add('hidden');
+                }
+            });
+        }
+
+        // Form Submit Handler
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            const form = document.getElementById('proposal-form');
+            const successBox = document.getElementById('form-success');
+            
+            form.style.display = 'none';
+            successBox.classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
