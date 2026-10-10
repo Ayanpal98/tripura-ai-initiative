@@ -54,6 +54,8 @@
             --atsfy-gold: #D9A43B;
             --atsfy-paper: #F7F6F2;
         }
+        .skip-link { position: absolute; top: -4rem; left: 1rem; z-index: 100; padding: .75rem 1rem; border-radius: .5rem; background: var(--atsfy-gold); color: var(--atsfy-forest); font-weight: 700; }
+        .skip-link:focus { top: 1rem; }
         html { scroll-padding-top: 6rem; }
         body { background: var(--atsfy-paper); }
         .hero-gradient {
@@ -109,7 +111,7 @@
     <meta name="color-scheme" content="light">
 
 </head>
-<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-brand-500 selection:text-white">
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-brand-500 selection:text-white">\n    <a class="skip-link" href="#overview">Skip to main content</a>
 
     <!-- Navigation Bar -->
     <header class="sticky top-0 z-50 bg-slate-900/95 backdrop-blur-md border-b border-slate-800 text-white shadow-lg">
@@ -124,7 +126,7 @@
                 </div>
             </div>
             
-            <nav class="hidden md:flex items-center space-x-6 text-sm font-medium">
+            <nav aria-label="Main navigation" class="hidden md:flex items-center space-x-6 text-sm font-medium">
                 <a href="#overview" class="hover:text-brand-100 transition">Overview</a>
                 <a href="#vision" class="hover:text-brand-100 transition">Vision & Objectives</a>
                 <a href="#components" class="hover:text-brand-100 transition">Core Components</a>
@@ -828,23 +830,23 @@
                     
                     <form id="proposal-form" onsubmit="handleFormSubmit(event)" class="space-y-4">
                         <div>
-                            <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Your Name / Designation</label>
+                            <label for="form-name" class="block text-xs font-bold text-slate-700 uppercase mb-1">Your Name / Designation</label>
                             <input type="text" id="form-name" required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 text-sm outline-none transition" placeholder="e.g., Directorate Official / Principal">
                         </div>
 
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                             <div>
-                                <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Organization / Department</label>
+                                <label for="form-org" class="block text-xs font-bold text-slate-700 uppercase mb-1">Organization / Department</label>
                                 <input type="text" id="form-org" required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 text-sm outline-none transition" placeholder="e.g., Skill Development Dept.">
                             </div>
                             <div>
-                                <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Contact Phone / Email</label>
+                                <label for="form-contact" class="block text-xs font-bold text-slate-700 uppercase mb-1">Contact Phone / Email</label>
                                 <input type="text" id="form-contact" required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 text-sm outline-none transition" placeholder="Email or Phone">
                             </div>
                         </div>
 
                         <div>
-                            <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Inquiry / Support Area</label>
+                            <label for="form-topic" class="block text-xs font-bold text-slate-700 uppercase mb-1">Inquiry / Support Area</label>
                             <select id="form-topic" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 text-sm outline-none transition bg-white">
                                 <option>Schedule Presentation / Demonstration</option>
                                 <option>Pilot District Rollout Discussion</option>
@@ -854,7 +856,7 @@
                         </div>
 
                         <div>
-                            <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Message or Comments</label>
+                            <label for="form-message" class="block text-xs font-bold text-slate-700 uppercase mb-1">Message or Comments</label>
                             <textarea id="form-message" rows="3" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 text-sm outline-none transition" placeholder="Specify any specific feedback or preferred meeting date..."></textarea>
                         </div>
 
