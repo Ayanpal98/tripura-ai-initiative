@@ -101,6 +101,74 @@
             body { background: white !important; }
         }
 
+    
+        /* Premium polish pass: calm institutional light theme, stronger hierarchy, and refined interaction states. */
+        :root {
+            --atsfy-forest: #1C301F;
+            --atsfy-green: #285040;
+            --atsfy-sage: #657253;
+            --atsfy-gold: #D9A43B;
+            --atsfy-paper: #F7F6F2;
+            --atsfy-ink: #202B22;
+            --atsfy-muted: #667166;
+            --atsfy-line: rgba(28,48,31,.12);
+        }
+        body { color: var(--atsfy-ink); background: var(--atsfy-paper); line-height: 1.65; }
+        header.sticky { box-shadow: 0 8px 30px rgba(11,25,14,.12); backdrop-filter: blur(18px); }
+        header .max-w-7xl { min-height: 76px; }
+        header a { text-decoration: none; }
+        header nav a:not(.bg-brand-500) { opacity: .88; }
+        header nav a:not(.bg-brand-500):hover { opacity: 1; color: #F3D18B !important; }
+        header nav a.bg-brand-500 { border: 1px solid rgba(217,164,59,.55); box-shadow: 0 8px 22px rgba(0,0,0,.16); }
+        .hero-gradient { position: relative; isolation: isolate; }
+        .hero-gradient::after { content: ""; position: absolute; inset: auto -10% -42% 36%; height: 72%; border: 1px solid rgba(217,164,59,.18); border-radius: 50%; transform: rotate(-13deg); pointer-events: none; z-index: -1; }
+        .hero-gradient h1 { max-width: 15ch; letter-spacing: -.045em; line-height: 1.07; }
+        .hero-gradient p { color: rgba(247,246,242,.82) !important; }
+        .hero-gradient .inline-flex { backdrop-filter: blur(12px); border-color: rgba(217,164,59,.35); }
+        .hero-gradient .bg-slate-800\/90 { background: rgba(247,246,242,.09) !important; border-color: rgba(247,246,242,.2) !important; box-shadow: 0 24px 70px rgba(0,0,0,.18); }
+        .hero-gradient .bg-slate-900\/60 { background: rgba(10,24,14,.34) !important; }
+        .hero-gradient .border-slate-700, .hero-gradient .border-slate-700\/50 { border-color: rgba(247,246,242,.14) !important; }
+        .hero-gradient .text-slate-400 { color: rgba(247,246,242,.66) !important; }
+        section[id] { scroll-margin-top: 6rem; }
+        section.py-20 { position: relative; }
+        section h2 { letter-spacing: .12em; }
+        section h3 { letter-spacing: -.035em; line-height: 1.18; }
+        .card-hover, section .rounded-2xl, section .rounded-3xl { border-radius: 1.25rem; }
+        .card-hover { border-color: var(--atsfy-line); box-shadow: 0 5px 20px rgba(28,48,31,.035); }
+        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 20px 42px -24px rgba(28,48,31,.32); }
+        .bg-white { background-color: #FFFEFC !important; }
+        .border-slate-200 { border-color: var(--atsfy-line) !important; }
+        .text-slate-900 { color: var(--atsfy-ink) !important; }
+        .text-slate-600 { color: #5F6B61 !important; }
+        .text-slate-500 { color: #738074 !important; }
+        .bg-slate-100 { background-color: #F0F1EB !important; }
+        .bg-slate-900 { background: linear-gradient(135deg, #1C301F, #285040) !important; }
+        .bg-slate-800 { background-color: rgba(247,246,242,.075) !important; }
+        .border-slate-700 { border-color: rgba(247,246,242,.16) !important; }
+        .bg-slate-800\/80 { background-color: rgba(247,246,242,.075) !important; }
+        .shadow-sm { box-shadow: 0 6px 24px rgba(28,48,31,.045); }
+        #contact { background: linear-gradient(180deg, #F0F1EB 0%, #F7F6F2 100%); }
+        #contact form input, #contact form select, #contact form textarea { background-color: #FFFEFC; border-color: rgba(28,48,31,.2); }
+        #contact form input::placeholder, #contact form textarea::placeholder { color: #899187; }
+        #contact form input:focus, #contact form select:focus, #contact form textarea:focus { border-color: var(--atsfy-green); box-shadow: 0 0 0 4px rgba(40,80,64,.1); }
+        #contact form button { background: var(--atsfy-green) !important; box-shadow: 0 10px 24px rgba(40,80,64,.18); }
+        #contact form button:hover { background: var(--atsfy-forest) !important; transform: translateY(-1px); }
+        footer { background: #142319 !important; }
+        .skip-link { box-shadow: 0 8px 24px rgba(0,0,0,.18); }
+        @media (max-width: 767px) {
+            header .max-w-7xl { min-height: 68px; }
+            .hero-gradient { padding-top: 4rem; padding-bottom: 4rem; }
+            .hero-gradient h1 { font-size: clamp(2.35rem, 10vw, 3.4rem); }
+            .hero-gradient .lg\\:col-span-5 > div { padding: 1.25rem; }
+            section.py-20 { padding-top: 4rem; padding-bottom: 4rem; }
+            #contact .bg-white { padding: 1.25rem; }
+        }
+        @media (prefers-reduced-motion: no-preference) {
+            .hero-gradient .lg\\:col-span-7 { animation: rise-in .65s ease-out both; }
+            .hero-gradient .lg\\:col-span-5 { animation: rise-in .8s .08s ease-out both; }
+            @keyframes rise-in { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+        }
+
     </style>
 
     <meta name="description" content="A proposed statewide AI literacy, digital skills and employability programme for Tripura, designed around practical workshops, inclusive access, responsible AI and measurable learning outcomes.">
@@ -137,7 +205,7 @@
             </nav>
 
             <div class="md:hidden flex items-center">
-                <button id="mobile-menu-btn" class="text-slate-300 hover:text-white focus:outline-none p-2">
+                <button id="mobile-menu-btn" type="button" aria-controls="mobile-menu" aria-expanded="false" aria-label="Open navigation menu" class="text-slate-300 hover:text-white focus:outline-none p-2">
                     <i class="fa-solid fa-bars text-xl"></i>
                 </button>
             </div>
