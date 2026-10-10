@@ -45,69 +45,7 @@
             transform: translateY(-4px);
             box-shadow: 0 12px 25px -5px rgba(2, 132, 199, 0.15), 0 8px 10px -6px rgba(2, 132, 199, 0.1);
         }
-    
-        /* ATSFY premium proposal layer — additive overrides; existing sections and content remain intact. */
-        :root {
-            --atsfy-forest: #1C301F;
-            --atsfy-green: #285040;
-            --atsfy-sage: #657253;
-            --atsfy-gold: #D9A43B;
-            --atsfy-paper: #F7F6F2;
-        }
-        html { scroll-padding-top: 6rem; }
-        body { background: var(--atsfy-paper); }
-        .hero-gradient {
-            background:
-              radial-gradient(ellipse at 82% 12%, rgba(217,164,59,.20), transparent 32%),
-              radial-gradient(ellipse at 10% 100%, rgba(101,114,83,.24), transparent 34%),
-              linear-gradient(135deg, #14271a 0%, #1C301F 48%, #285040 100%);
-        }
-        header.sticky { background: rgba(20,39,26,.96) !important; border-color: rgba(217,164,59,.24) !important; }
-        .bg-brand-500, .bg-brand-600 { background-color: var(--atsfy-green) !important; }
-        .hover\\:bg-brand-600:hover, .hover\\:bg-brand-700:hover { background-color: var(--atsfy-forest) !important; }
-        .text-brand-500, .text-brand-600, .text-brand-400 { color: var(--atsfy-green) !important; }
-        .text-brand-100, .text-brand-50 { color: #E8E8D9 !important; }
-        .bg-brand-50 { background-color: #EDF0E8 !important; }
-        .bg-brand-100 { background-color: #E4E9DE !important; }
-        .border-brand-500 { border-color: var(--atsfy-gold) !important; }
-        .ring-brand-500 { --tw-ring-color: var(--atsfy-gold) !important; }
-        .from-brand-500 { --tw-gradient-from: var(--atsfy-green) var(--tw-gradient-from-position) !important; }
-        .to-accent-500 { --tw-gradient-to: var(--atsfy-gold) var(--tw-gradient-to-position) !important; }
-        .text-accent-500, .text-accent-600, .text-accent-400 { color: #55704B !important; }
-        .bg-accent-500, .bg-accent-600 { background-color: #55704B !important; }
-        .hover\\:bg-accent-600:hover { background-color: #3D5637 !important; }
-        .bg-accent-50 { background-color: #EDF2E9 !important; }
-        .border-accent-200 { border-color: #CBD8C3 !important; }
-        .text-sky-400, .text-sky-600 { color: #657253 !important; }
-        .bg-sky-50 { background-color: #EEF0E8 !important; }
-        .card-hover { transition: transform .24s ease, box-shadow .24s ease, border-color .24s ease; }
-        .card-hover:hover { transform: translateY(-3px); border-color: rgba(217,164,59,.55); box-shadow: 0 18px 36px -18px rgba(28,48,31,.28); }
-        a, button, input, select, textarea { transition-duration: .18s; }
-        a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
-            outline: 3px solid var(--atsfy-gold); outline-offset: 3px;
-        }
-        ::selection { background: var(--atsfy-gold); color: var(--atsfy-forest); }
-        @media (prefers-reduced-motion: reduce) {
-            *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
-        }
-        @media print {
-            header.sticky { position: static !important; background: white !important; color: black !important; box-shadow: none !important; }
-            .hero-gradient { background: white !important; color: black !important; }
-            .hero-gradient * { color: black !important; text-shadow: none !important; }
-            #contact form, #mobile-menu-btn { display: none !important; }
-            .card-hover { break-inside: avoid; box-shadow: none !important; }
-            body { background: white !important; }
-        }
-
     </style>
-
-    <meta name="description" content="A proposed statewide AI literacy, digital skills and employability programme for Tripura, designed around practical workshops, inclusive access, responsible AI and measurable learning outcomes.">
-    <meta name="theme-color" content="#1C301F">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Tripura AI, Digital Skills & Employability Initiative">
-    <meta property="og:description" content="A practical, inclusive proposal to strengthen AI literacy, digital productivity and employability across Tripura.">
-    <meta name="color-scheme" content="light">
-
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-brand-500 selection:text-white">
 
@@ -922,28 +860,14 @@
             });
         }
 
-        // Form Submit Handler: prepare an email instead of falsely claiming data was stored.
+        // Form Submit Handler
         function handleFormSubmit(event) {
             event.preventDefault();
-            const name = document.getElementById('form-name').value.trim();
-            const org = document.getElementById('form-org').value.trim();
-            const contact = document.getElementById('form-contact').value.trim();
-            const topic = document.getElementById('form-topic').value;
-            const message = document.getElementById('form-message').value.trim();
-            const subject = encodeURIComponent('Tripura AI Initiative — ' + topic);
-            const body = encodeURIComponent(
-                'Expression of Interest / Meeting Request\n\n' +
-                'Name / Designation: ' + name + '\n' +
-                'Organization / Department: ' + org + '\n' +
-                'Contact: ' + contact + '\n' +
-                'Topic: ' + topic + '\n\n' +
-                'Message: ' + (message || 'Not provided') + '\n\n' +
-                'Sent from the Tripura AI Initiative proposal portal.'
-            );
-            const notice = document.getElementById('form-success');
-            notice.innerHTML = '<strong>Email draft prepared.</strong> Your email application should open with this request addressed to helplinewelfare135@gmail.com. Please review and send it to complete your inquiry.';
-            notice.classList.remove('hidden');
-            window.location.href = 'mailto:helplinewelfare135@gmail.com?subject=' + subject + '&body=' + body;
+            const form = document.getElementById('proposal-form');
+            const successBox = document.getElementById('form-success');
+            
+            form.style.display = 'none';
+            successBox.classList.remove('hidden');
         }
     </script>
 </body>
